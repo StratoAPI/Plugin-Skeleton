@@ -1,5 +1,5 @@
 module github.com/ResourceAPI/Plugin-Skeleton
 
-replace github.com/ResourceAPI/Core v0.0.0 => ../Core
+replace github.com/ResourceAPI/Interface v0.0.0 => ../Interface
 
-require github.com/ResourceAPI/Core v0.0.0
+require github.com/ResourceAPI/Interface v0.0.0
