@@ -1,5 +1,5 @@
-module github.com/ResourceAPI/Plugin-Skeleton
+module github.com/StratoAPI/Plugin-Skeleton
 
-replace github.com/ResourceAPI/Interface v0.0.0 => ../Interface
+replace github.com/StratoAPI/Interface v0.0.0 => ../Interface
 
-require github.com/ResourceAPI/Interface v0.0.0
+require github.com/StratoAPI/Interface v0.0.0

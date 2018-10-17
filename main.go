@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/ResourceAPI/Interface/plugins"
+	"github.com/StratoAPI/Interface/plugins"
 
-	"github.com/ResourceAPI/Plugin-Skeleton/skeleton"
+	"github.com/StratoAPI/Plugin-Skeleton/skeleton"
 )
 
 type SkeletonPlugin string

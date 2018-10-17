@@ -1,3 +1,3 @@
 # Plugin-Skeleton
 
-An example plugin for ResourceAPI/Core
+An example plugin for StratoAPI/Core
