@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/ResourceAPI/Plugin-Skeleton/skeleton"
+	"github.com/StratoAPI/Interface/plugins"
 
-	"github.com/ResourceAPI/Core/plugins"
+	"github.com/StratoAPI/Plugin-Skeleton/skeleton"
 )
 
 type SkeletonPlugin string
@@ -15,10 +15,10 @@ func (SkeletonPlugin) Name() string {
 }
 
 func (SkeletonPlugin) Entrypoint() {
-	plugins.RegisterFacade("skeleton", &skeleton.SkeletonFacade{})
-	plugins.RegisterStorage("skeleton", &skeleton.SkeletonStorage{})
-	plugins.RegisterFilter("skeleton", &skeleton.SkeletonFilter{})
-	plugins.AssociateFilter("skeleton", "skeleton")
+	plugins.GetRegistry().RegisterFacade("skeleton", &skeleton.SkeletonFacade{})
+	plugins.GetRegistry().RegisterStorage("skeleton", &skeleton.SkeletonStorage{})
+	plugins.GetRegistry().RegisterFilter("skeleton", &skeleton.SkeletonFilter{})
+	plugins.GetRegistry().AssociateFilter("skeleton", "skeleton")
 	fmt.Println("Skeleton Plugin Initialized")
 }
 
