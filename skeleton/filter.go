@@ -1,5 +1,7 @@
 package skeleton
 
+import "github.com/StratoAPI/Interface/filter"
+
 type SkeletonFilter struct {
 }
 
@@ -19,6 +21,11 @@ func (skeleton SkeletonFilter) Stop() error {
 }
 
 // Validate structure for filter validness
-func (skeleton SkeletonFilter) ValidateFilter(filter interface{}) (bool, error) {
+func (skeleton SkeletonFilter) ValidateFilter(filter filter.ProcessedFilter) (bool, error) {
 	return false, nil // TODO
+}
+
+// Create a new instance of the filter
+func (skeleton SkeletonFilter) CreateFilter(filter string) (interface{}, error) {
+	return nil, nil // TODO
 }

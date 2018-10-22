@@ -1,5 +1,7 @@
 package skeleton
 
+import "github.com/StratoAPI/Interface/filter"
+
 type SkeletonStorage struct {
 }
 
@@ -19,7 +21,7 @@ func (storage SkeletonStorage) Stop() error {
 }
 
 // Retrieve resources.
-func (storage SkeletonStorage) GetResources(resource string, filters []interface{}) ([]map[string]interface{}, error) {
+func (storage SkeletonStorage) GetResources(resource string, filters []filter.ProcessedFilter) ([]map[string]interface{}, error) {
 	return nil, nil // TODO
 }
 
@@ -29,11 +31,11 @@ func (storage SkeletonStorage) CreateResources(resource string, data []map[strin
 }
 
 // Update resources.
-func (storage SkeletonStorage) UpdateResources(resource string, data []map[string]interface{}, filters []interface{}) error {
+func (storage SkeletonStorage) UpdateResources(resource string, data []map[string]interface{}, filters []filter.ProcessedFilter) error {
 	return nil // TODO
 }
 
 // Delete resources.
-func (storage SkeletonStorage) DeleteResources(resource string, filters []interface{}) error {
+func (storage SkeletonStorage) DeleteResources(resource string, filters []filter.ProcessedFilter) error {
 	return nil // TODO
 }
