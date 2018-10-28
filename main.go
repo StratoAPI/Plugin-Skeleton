@@ -18,6 +18,7 @@ func (SkeletonPlugin) Entrypoint() {
 	plugins.GetRegistry().RegisterFacade("skeleton", &skeleton.SkeletonFacade{})
 	plugins.GetRegistry().RegisterStorage("skeleton", &skeleton.SkeletonStorage{})
 	plugins.GetRegistry().RegisterFilter("skeleton", &skeleton.SkeletonFilter{})
+	plugins.GetRegistry().RegisterMiddleware("skeleton", &skeleton.SkeletonMiddleware{})
 	plugins.GetRegistry().AssociateFilter("skeleton", "skeleton")
 	fmt.Println("Skeleton Plugin Initialized")
 }

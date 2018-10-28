@@ -31,7 +31,7 @@ func (storage SkeletonStorage) CreateResources(resource string, data []map[strin
 }
 
 // Update resources.
-func (storage SkeletonStorage) UpdateResources(resource string, data []map[string]interface{}, filters []filter.ProcessedFilter) error {
+func (storage SkeletonStorage) UpdateResources(resource string, data map[string]interface{}, filters []filter.ProcessedFilter) error {
 	return nil // TODO
 }
 
